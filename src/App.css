@@ -1,0 +1,150 @@
+/* Root styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #292b2c;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/* Mnemonic Section */
+.mnemonic-section {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.generate-button {
+  background-color: #5c67f2;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 20px rgba(92, 103, 242, 0.4);
+}
+
+.generate-button:hover {
+  background-color: #4954d7;
+}
+
+.mnemonic {
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: #333;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  white-space: normal;
+  word-wrap: break-word;
+  /* Ensure long mnemonic words wrap properly */
+}
+
+.mnemonic-visible {
+  opacity: 1;
+}
+
+/* Wallet Section */
+.wallet-sections {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1284px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.wallet-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 636px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wallet-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.wallet-section h3 {
+  font-size: 1.5rem;
+  color: #5c67f2;
+  margin-bottom: 20px;
+}
+
+/* Wallet addresses */
+.wallet-section div {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+  /* Ensure addresses wrap within container */
+  white-space: normal;
+  text-align: left;
+}
+
+/* Button styles for wallets */
+.wallet-section button {
+  background-color: #5c67f2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.wallet-section button:hover {
+  background-color: #4954d7;
+}
+
+.walletRepresentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Web-Based Wallet</h1>
+        <h1>Web-Based Wallets</h1>
       </header>
 
       <div className="mnemonic-section">
